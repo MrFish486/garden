@@ -8,7 +8,7 @@ document.getElementById("main").width = window.innerWidth;
 document.getElementById("main").height = window.innerHeight;
 
 
-let images = ["./svg/0.svg", "./svg/1.svg", "./svg/2.svg", "./svg/3.svg", "./svg/4.svg", "./svg/5.svg", "./svg/6.svg", "./svg/7.svg", "./svg/8.svg", "./svg/9.svg", "./svg/10.svg"];
+let images = ["./svg/0.svg", "./svg/1.svg", "./svg/2.svg", "./svg/3.svg", "./svg/4.svg", "./svg/5.svg", "./svg/6.svg", "./svg/7.svg", "./svg/8.svg", "./svg/9.svg", "./svg/10.svg", "./svg/11.svg"];
 var cache = [];
 var world = [];
 for (let x = 0; x < scalex; x ++) {
@@ -142,6 +142,10 @@ act = () => {
 					world[x][y + 1] = 10;
 				}
 				world[x][y] = Math.random() < 0.5 ? 9 : 0;
+			} else if(world[x][y] == 2 && Math.random() < 0.005) {
+				world[x][y] = 11;
+			} else if(world[x][y] == 11 && Math.random() < 0.005) {
+				world[x][y] = 2;
 			} else if (Math.random() < 0.005) {
 				world[x][y] = 0;
 			} else if (Math.random() < 0.0001) {

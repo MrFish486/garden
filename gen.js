@@ -144,6 +144,8 @@ act = () => {
 				world[x][y] = Math.random() < 0.5 ? 9 : 0;
 			} else if (Math.random() < 0.005) {
 				world[x][y] = 0;
+			} else if (Math.random() < 0.0001) {
+				world[x][y] = Math.floor(Math.random() * images.length);
 			}
 		}
 	}

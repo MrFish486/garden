@@ -1,7 +1,8 @@
 <head>
-	<style>*{margin:0px;padding:0px}</style>
+	<style>*{margin:0px;padding:0px;font-family:helvetica}div{border-radius:20px;background-color:rgba(200,200,200,0.75);padding:10px;position:absolute;margin:10px}button{border-radius:5px;border:1px solid black;background-color:white}</style>
 </head>
 <body>
+	<div id="p"><a>Feels sluggish? Turn on sonic mode : </a><button onclick="clearInterval(I);I=setInterval(()=>{gen(false);act()},16);document.getElementById('p').hidden=true"> Sonic mode </button> <button onclick="document.getElementById('p').hidden=true"> No, thank you </button></div>
 	<canvas id="main">
 	<script src="gen.js"></script>
 </body>

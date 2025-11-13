@@ -1,9 +1,0 @@
-<head>
-	<style>*{margin:0px;padding:0px;font-family:helvetica}div#p{border-radius:20px;background-color:rgba(200,200,200,0.75);padding:10px;position:absolute;margin:10px}button{margin-left:5px;border-radius:5px;border:1px solid black;background-color:white}div#p2{border-radius:20px;background-color:rgba(200,200,200,0.75);padding:10px;position:absolute;margin-left:10px;margin-top:50px}</style>
-</head>
-<body>
-	<div id="p"><a>Feels sluggish? Turn on sonic mode : </a><button onclick="clearInterval(I);I=setInterval(()=>{gen(false);act()},16);document.getElementById('p').hidden=true"> Sonic mode </button> <button onclick="document.getElementById('p').hidden=true"> No, thank you </button></div>
-	<div id="p2"><a>Background color : </a><button onclick="document.body.style.backgroundColor=251;">Green</button><button onclick="document.body.style.backgroundColor=230">Dark green</button><button onclick="document.body.style.backgroundColor=258">Blue</button><button onclick="document.body.style.backgroundColor=53">Dark blue</button><button onclick="document.body.style.backgroundColor=222">Pale grey</button><button onclick="document.getElementById('p2').hidden=true">Close</button></div>
-	<canvas id="main">
-	<script src="gen.js"></script>
-</body>

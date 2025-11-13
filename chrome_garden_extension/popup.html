@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<script src="popup.js"></script>
+		<style>
+			* {
+				font-family: monospace;
+				font-size: 10px;
+			}
+			button {
+				background-color: #fff;
+				border: 2px solid black;
+				border-radius: 5px;
+				margin-left: 5px;
+			}
+			button:hover {
+				background-color: #ddd;
+			}
+			button:active {
+				background-color: #ccc;
+			}
+			input {
+				border: 2px solid black;
+			}
+		</style>
+	</head>
+	<body>
+		<b>Sonic mode (not recomended) :</b><br><br>
+		<button id="sonic_off">OFF</button><br>
+		<button id="sonic_on">ON</button><br><br>
+		<b>Background color :</b><br><br>
+		<button id="bk_green">Green</button><br>
+		<button id="bk_darkgreen">Dark green</button><br>
+		<button id="bk_blue">Blue</button><br>
+		<button id="bk_darkblue">Dark blue</button><br>
+		<button id="bk_grey">Grey</button><br>
+		<button id="bk_other">Other:<input type="text" id="bk_other_color"></input></button><br><br>
+		<b>Scale :</b><br>
+		<input id="scale" type="range" min="1" max="100" value="20"></input><br>
+		<a id="scale_display">(20)</a>
+	</body>
+</html>

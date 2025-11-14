@@ -15,7 +15,7 @@
 		document.getElementById("bk_blue").onclick = () => {
 			chrome.storage.sync.set({"bkc" : 258}, () => {});
 		}
-		document.getElementById("bk_blue").onclick = () => {
+		document.getElementById("bk_darkblue").onclick = () => {
 			chrome.storage.sync.set({"bkc" : 53}, () => {});
 		}
 		document.getElementById("bk_grey").onclick = () => {

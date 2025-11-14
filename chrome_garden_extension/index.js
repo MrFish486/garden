@@ -92,7 +92,7 @@ console.log(chrome.runtime.getURL('/svg/0.svg'));
 							world[x][y] = Math.random() > 0.2 ? 3 : 2;
 						}
 					}
-				} else if (world[x][y] == 7 && Math.random() < 0.005) {
+				} else if (world[x][y] == 7 && Math.random() < /*0.005*/0.01) {
 					if (x == 0 && y == 0) {
 						world[x + 1][y + 1] = 7;
 					} else {
